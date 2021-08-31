@@ -68,7 +68,7 @@ function getFavData(req,res){
   userModel.findOne({email:email},(err,result)=>{
     if(err){
       res.send(err)
-    }else{res.send(result.data)}
+    }else{res.send(result)}
     
   })
  
